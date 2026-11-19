@@ -1,0 +1,42 @@
+{
+  "name": "opencode-caveman",
+  "version": "0.1.0",
+  "description": "Caveman lite mode for OpenCode: /caveman on|off|saved — terse, professional prose with estimated token savings.",
+  "private": false,
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "caveman",
+    "token-savings",
+    "terseness"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hakergeniusz/opencode-caveman.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hakergeniusz/opencode-caveman/issues"
+  },
+  "homepage": "https://github.com/hakergeniusz/opencode-caveman#readme",
+  "exports": {
+    ".": "./src/index.ts",
+    "./tui": "./src/tui.tsx",
+    "./rpc": "./src/rpc.ts"
+  },
+  "files": [
+    "src"
+  ],
+  "dependencies": {
+    "@opencode/plugin": "latest"
+  },
+  "devDependencies": {
+    "typescript": "latest"
+  },
+  "peerDependencies": {
+    "@opentui/core": ">=0.6.6",
+    "@opentui/solid": ">=0.6.6",
+    "solid-js": ">=1.9.0"
+  }
+}
